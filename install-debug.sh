@@ -149,7 +149,7 @@
     # Create random password
     rootpasswd=$(openssl rand -base64 12)
     export DEBIAN_FRONTEND="noninteractive"
-    sudo apt -y install mariadb-server libmariadbclient-dev
+    sudo apt -y install mariadb-server
     sudo systemctl start mysql
     sudo systemctl enable mysql
     sleep 5
