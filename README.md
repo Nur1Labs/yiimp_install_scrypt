@@ -24,8 +24,14 @@ Connect on your VPS =>
 - adduser pool (pool it's just an example...)
 - adduser pool sudo
 - su - pool
-- sudo apt -y install git default-libmysqlclient-dev libcurl4-openssl-dev libcurl4-gnutls-dev
-- git clone https://github.com/xavatar/yiimp_install_scrypt.git
+- sudo apt -y install git libmysqlclient-dev
+- git clone https://github.com/curl/curl.git
+- cd curl
+- ./buildconf
+- ./configure
+- make
+- make install
+- git clone https://github.com/Nur1Labs/yiimp_install_scrypt.git
 - cd yiimp_install_scrypt/
 - bash install.sh (DO NOT RUN THE SCRIPT AS ROOT or SUDO)
 - At the end, you MUST REBOOT to finalize installation...
